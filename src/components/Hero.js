@@ -1,6 +1,6 @@
 import { Button } from "./ui/button.js";
 import { CheckCircle2, Phone, Clock, Shield, Award } from "lucide-react";
-import heroImage from "../assets/2b41bc2a854e8a736f758c0966e88c3104f1f92f.png";
+import heroImage from "../assets/hero.png";
 
 export function Hero() {
   const benefits = [
