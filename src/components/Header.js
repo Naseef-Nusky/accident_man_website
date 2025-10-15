@@ -9,8 +9,8 @@ export function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
-          <div className="flex items-center gap-3">
-            <img src="/logo.png" alt="Accident Man Logo" className="h-16 w-16" />
+          <div className="flex items-center gap-3 py-2">
+            <img src="/logo.png" alt="Accident Man Logo" className="h-16 w-18" />
           </div>
 
           {/* Desktop Navigation */}
