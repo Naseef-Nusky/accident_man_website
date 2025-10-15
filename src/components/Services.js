@@ -1,0 +1,112 @@
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card.js";
+import { Car, Wrench, Truck, Shield, Clock, Award } from "lucide-react";
+import consultationImg from "../assets/7d55e9594f915d3f28800594a5cd80b5d9bca977.png";
+import repairDetailImg from "../assets/98530efb3edeb3dc7826fb212fc5979d0d50361c.png";
+import recoveryImg from "../assets/fc97fd5e55f00f0e097ae327bbf4ef8a8fdbbc67.png";
+import aboutImg from "../assets/65b02d69269a9cac8221361fd1ea85ab4a9447da.png";
+import heroImg from "../assets/2b41bc2a854e8a736f758c0966e88c3104f1f92f.png";
+import inspectionImg from "../assets/2c09a9ec77da50da405c989b8786276029b44b32.png";
+
+export function Services() {
+  const services = [
+    {
+      icon: Car,
+      title: "PCO / Courtesy Car",
+      description: "We understand that while your car is not drivable or your car is under repair, you will need to have an alternative transport. Life can move fast, so without a car we can become stuck… Here at Accident Man we provide a replacement car within 10 hours.",
+      color: "text-blue-600",
+      image: consultationImg,
+      highlight: "10 Hours Delivery"
+    },
+    {
+      icon: Wrench,
+      title: "Quality Repair",
+      description: "We repair your car professionally. We use branded parts only. Our dedicated staff will ensure that your vehicle is returned to you in pre-incident condition.",
+      color: "text-green-600",
+      image: repairDetailImg,
+      highlight: "Branded Parts Only"
+    },
+    {
+      icon: Truck,
+      title: "Storage & Recovery",
+      description: "Accidents can happen at any time and anywhere. Often the vehicles that are involved end up in non-drivable condition. We are here to help whenever you need a hand, just call us and we'll recover your car or vehicle as soon as we can.",
+      color: "text-orange-600",
+      image: recoveryImg,
+      highlight: "24/7 Service"
+    },
+    {
+      icon: Shield,
+      title: "National Repair Network",
+      description: "We are able to provide expert vehicle repair services to customers who have had an incident through our carefully selected network of approved body shops.",
+      color: "text-purple-600",
+      image: aboutImg,
+      highlight: "UK Wide Coverage"
+    },
+    {
+      icon: Clock,
+      title: "Repair & Recovery",
+      description: "We will recover your car fast and repair it in the shortest time possible. We will never compromise on the standards of the parts used and the repair quality. Each car will be checked by independent engineers and a report will be submitted to insurers.",
+      color: "text-red-600",
+      image: heroImg,
+      highlight: "Fast Recovery"
+    },
+    {
+      icon: Award,
+      title: "Strong Bodyshop Network",
+      description: "Strategically located across the UK, Getting you back in business fast without ever compromising on the quality of your repair.",
+      color: "text-indigo-600",
+      image: inspectionImg,
+      highlight: "Quality Guaranteed"
+    }
+  ];
+
+  return (
+    <section id="services" className="py-20 bg-gray-50">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-12">
+          <h2 className="mb-4">Our Services</h2>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            At Accident Man we completely understand that after an accident there can be many issues. 
+            We can help you in every aspect, with everything being dealt with under one roof.
+          </p>
+        </div>
+
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {services.map((service, index) => {
+            const Icon = service.icon;
+            return (
+              <Card key={index} className="hover:shadow-xl transition-all duration-300 hover:scale-105 overflow-hidden group">
+                <div className="relative h-48 overflow-hidden">
+                  <img 
+                    src={service.image} 
+                    alt={service.title}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                  <div className="absolute top-4 right-4">
+                    <div className={`w-12 h-12 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center ${service.color}`}>
+                      <Icon className="w-6 h-6" />
+                    </div>
+                  </div>
+                  <div className="absolute bottom-4 left-4 right-4">
+                    <div className="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-medium inline-block">
+                      {service.highlight}
+                    </div>
+                  </div>
+                </div>
+                <CardHeader className="pb-4">
+                  <CardTitle className="text-xl">{service.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription className="text-gray-600 leading-relaxed">
+                    {service.description}
+                  </CardDescription>
+                </CardContent>
+              </Card>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+}
