@@ -1,6 +1,5 @@
 import { Menu, Phone } from "lucide-react";
 import { useState } from "react";
-import logo from "../assets/024fb814c37a5545d504100d24a947c8311efdc5.png";
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -11,7 +10,7 @@ export function Header() {
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <img src={logo} alt="Accident Man Logo" className="h-12 w-12" />
+            <img src="/logo.png" alt="Accident Man Logo" className="h-12 w-12" />
           </div>
 
           {/* Desktop Navigation */}
