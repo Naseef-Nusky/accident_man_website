@@ -48,9 +48,6 @@ export function Hero() {
                 <Shield className="w-4 h-4" />
                 Trusted Since 2011
               </div>
-              <div className="text-2xl lg:text-3xl font-semibold text-green-400 mb-2">
-                Accident Man
-              </div>
               <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
                 <span className="text-white">Professional</span>
                 <br />
