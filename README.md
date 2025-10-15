@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+# Accident Man Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A professional React-based website for Accident Man, a UK-based accident management company providing comprehensive car accident services.
 
-## Available Scripts
+## 🚗 Features
 
-In the project directory, you can run:
+- **Modern Design**: Clean, professional UI with Tailwind CSS
+- **Responsive Layout**: Mobile-first design that works on all devices
+- **Interactive Components**: 
+  - Hero section with company branding
+  - Services showcase with images
+  - Customer reviews slider
+  - FAQ accordion
+  - Contact forms
+- **Professional Branding**: Consistent green color scheme and Accident Man branding
 
-### `npm start`
+## 🛠️ Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React 18** - Frontend framework
+- **Tailwind CSS** - Styling and responsive design
+- **Lucide React** - Icons
+- **Radix UI** - Accessible UI components
+- **Class Variance Authority** - Component variants
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📦 Installation
 
-### `npm test`
+1. Clone the repository:
+```bash
+git clone https://github.com/Naseef-Nusky/accident_man_website.git
+cd accident_man_website
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Install dependencies:
+```bash
+npm install
+```
 
-### `npm run build`
+3. Start the development server:
+```bash
+npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🎨 Components
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Header**: Navigation with logo and contact information
+- **Hero**: Main landing section with company name and key benefits
+- **About**: Company information and mission
+- **Services**: Service offerings with images and descriptions
+- **Claims Process**: Step-by-step process explanation
+- **Reviews**: Customer testimonials slider
+- **FAQ**: Frequently asked questions with accordion
+- **Contact Form**: Lead generation form
+- **Footer**: Contact details and links
 
-### `npm run eject`
+## 🚀 Services Offered
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- PCO / Courtesy Car (10-hour delivery)
+- Quality Repair with branded parts
+- Storage & Recovery (24/7 service)
+- National Repair Network
+- Repair & Recovery
+- Strong Bodyshop Network
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📞 Contact Information
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Main Phone**: 0843 289 1570
+- **24/7 Service**: 0758 801 0693
+- **Email**: Available through contact form
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🌟 Key Features
 
-## Learn More
+- **No Excess to Pay** for non-fault accidents
+- **Credit Hire** arrangements
+- **No Up-Front Costs**
+- **Quality Vehicle Repairs**
+- **Similar Replacement Vehicle**
+- **Taxi/PCO Accident Claims**
+- **Motorcycle Accident Claims**
+- **Legal Assistance**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📱 Responsive Design
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The website is fully responsive and optimized for:
+- Desktop computers
+- Tablets
+- Mobile phones
+- Various screen sizes
 
-### Code Splitting
+## 🎯 Target Audience
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Individuals involved in non-fault road traffic accidents
+- PCO/Taxi drivers
+- Motorcycle riders
+- Anyone needing professional accident management services
 
-### Analyzing the Bundle Size
+## 📄 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+This project is proprietary to Accident Man company.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Accident Man** - Professional Accident Management Services Since 2011
