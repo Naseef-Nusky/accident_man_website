@@ -2,13 +2,15 @@ import { CheckCircle2 } from "lucide-react";
 import aboutImage from "../assets/65b02d69269a9cac8221361fd1ea85ab4a9447da.png";
 
 export function About() {
-  const features = [
-    "Vehicle recovery and storage facilities",
-    "Replacement hire vehicles",
-    "Trusted panel of solicitors for Personal Injury Claims",
-    "Personal Compensation assistance",
-    "Professional and dedicated case management",
-    "Everything handled under one roof"
+  const services = [
+    "Vehicle recovery and secure storage facilities",
+    "Replacement hire vehicles (cars and vans)",
+    "Assistance with vehicle damage and repair claims",
+    "Nationwide network of trusted repair centres",
+    "Qualified engineers and professional assessors",
+    "Expert legal assistance and advice",
+    "Professional, dedicated case management",
+    "All services managed efficiently under one roof"
   ];
 
   return (
@@ -18,24 +20,25 @@ export function About() {
           <div>
             <h2 className="mb-6">About Accident Man</h2>
             <p className="text-gray-600 mb-6">
-              Accident Man has been providing car accident management services across the country 
-              since 2011. We have been assisting clients who have been involved in non-fault road 
-              traffic accidents that were caused by third party vehicles.
+              With over a decade of experience, Accident Man has been proudly helping drivers across the UK get back on the road quickly and safely. Since 2011, we've built a trusted reputation for reliability, professionalism, and exceptional customer care in non-fault accident management.
+            </p>
+            <p className="text-gray-600 mb-6">
+              We handle everything from start to finish — making the process simple, stress-free, and managed entirely under one roof. Our team of experts, engineers, assessors, and legal specialists ensure every case is handled with precision and care, keeping you fully informed every step of the way.
             </p>
             <p className="text-gray-600 mb-8">
-              At Accident Man we completely understand that after an accident there can be many issues, 
-              but needn't worry as we can help you in every aspect, including car or van hire. This is 
-              great because you can have peace of mind knowing that everything is being dealt with under 
-              one roof and that your case is in professional/dedicated hands.
+              Thanks to our nationwide network of trusted repair centres — supported by qualified engineers, professional assessors, and experienced legal specialists — we're able to deliver the highest standard of service, restoring your vehicle to its full former glory quickly, safely, and efficiently.
             </p>
 
-            <div className="space-y-3">
-              {features.map((feature, index) => (
-                <div key={index} className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-700">{feature}</span>
-                </div>
-              ))}
+            <div className="mb-6">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Our Services Include:</h3>
+              <div className="space-y-3">
+                {services.map((service, index) => (
+                  <div key={index} className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-700">{service}</span>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
 
