@@ -187,7 +187,7 @@ export function Reviews() {
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <a 
-                href="tel:08432891570"
+                href="tel:07591264731"
                 className="bg-white text-green-600 px-10 py-5 rounded-xl font-bold text-xl hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg"
               >
                 Start Your Claim - Call Now

@@ -10,7 +10,7 @@ export function Header() {
         <div className="flex items-center justify-between py-2">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <img src="/logo.png" alt="Accident Man Logo" className="h-20 w-24" />
+            <img src="/logo.png" alt="Accident Man Logo" className="h-22 w-24" />
           </div>
 
           {/* Desktop Navigation */}
@@ -24,9 +24,9 @@ export function Header() {
 
           {/* Contact Button */}
           <div className="hidden md:flex items-center gap-4">
-            <a href="tel:08432891570" className="flex items-center gap-2 text-green-600">
+            <a href="tel:07591264731" className="flex items-center gap-2 text-green-600">
               <Phone className="w-4 h-4" />
-              <span>0843 289 1570</span>
+              <span>07591 264731</span>
             </a>
           </div>
 
@@ -48,9 +48,9 @@ export function Header() {
               <a href="#services" className="text-gray-700 hover:text-green-600 transition-colors">Services</a>
               <a href="#faq" className="text-gray-700 hover:text-green-600 transition-colors">FAQ</a>
               <a href="#contact" className="text-gray-700 hover:text-green-600 transition-colors">Contact Us</a>
-              <a href="tel:08432891570" className="flex items-center gap-2 text-green-600">
+              <a href="tel:07591264731" className="flex items-center gap-2 text-green-600">
                 <Phone className="w-4 h-4" />
-                <span>0843 289 1570</span>
+                <span>07591 264731</span>
               </a>
             </div>
           </nav>

@@ -29,12 +29,24 @@ function CardHeader({ className, ...props }: React.ComponentProps<"div">) {
 }
 
 function CardTitle({ className, ...props }: React.ComponentProps<"div">) {
+  const { children, ...restProps } = props || {};
+  if (!children) {
+    return (
+      <div
+        data-slot="card-title"
+        className={cn("leading-none", className)}
+        {...restProps}
+      />
+    );
+  }
   return (
     <h4
       data-slot="card-title"
       className={cn("leading-none", className)}
-      {...props}
-    />
+      {...restProps}
+    >
+      {children}
+    </h4>
   );
 }
 
