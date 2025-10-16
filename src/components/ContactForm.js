@@ -109,7 +109,7 @@ export function ContactForm() {
                   <div>
                     <p className="text-gray-900 mb-1">Phone Numbers</p>
                     <p className="text-gray-600">
-                      Main: <a href="tel:07591264731" className="text-green-600 hover:underline">07591 264731</a><br />
+                      Main: <a href="tel:08432891570" className="text-green-600 hover:underline">0843 289 1570</a><br />
                       24/7: <a href="tel:07591264731" className="text-green-600 hover:underline">07591 264731</a>
                     </p>
                   </div>

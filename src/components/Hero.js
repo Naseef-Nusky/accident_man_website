@@ -91,7 +91,7 @@ export function Hero() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
                 <Phone className="w-5 h-5 mr-2" />
-                <a href="tel:07591264731">Call 07591 264731</a>
+                <a href="tel:08432891570">Call 0843 289 1570</a>
               </Button>
               <Button size="lg" variant="outline" className="bg-white/10 border-white/30 text-white hover:bg-white/20 px-8 py-4 text-lg font-semibold backdrop-blur-sm transition-all duration-300 transform hover:scale-105">
                 <a href="#contact">Request a Callback</a>

@@ -80,7 +80,7 @@ export function ClaimsProcess() {
                 you'll have a dedicated case handler ensuring everything runs smoothly.
               </p>
               <Button className="bg-green-600 hover:bg-green-700 w-full sm:w-auto">
-                <a href="tel:07591264731">Start Your Claim Today</a>
+                <a href="tel:08432891570">Start Your Claim Today</a>
               </Button>
             </div>
           </div>
