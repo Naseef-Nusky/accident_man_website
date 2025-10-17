@@ -1,4 +1,4 @@
-import { Menu, Phone, ChevronDown } from "lucide-react";
+import { Menu, Phone, ChevronDown, X } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -19,7 +19,7 @@ export function Header() {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-8">
             <Link to="/" className="text-gray-700 hover:text-green-600 transition-colors">Home</Link>
             <Link to="/about" className="text-gray-700 hover:text-green-600 transition-colors">About Us</Link>
             <Link to="/accident" className="text-gray-700 hover:text-green-600 transition-colors">Accident</Link>
@@ -58,7 +58,7 @@ export function Header() {
           </nav>
 
           {/* Contact Button */}
-          <div className="hidden md:flex items-center gap-4">
+          <div className="hidden lg:flex items-center gap-4">
             <a href="tel:08432891570" className="flex items-center gap-2 text-green-600">
               <Phone className="w-4 h-4" />
               <span>0843 289 1570</span>
@@ -67,16 +67,16 @@ export function Header() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2"
+            className="lg:hidden p-2"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
-            <Menu className="w-6 h-6" />
+            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <nav className="md:hidden py-4 border-t">
+          <nav className="lg:hidden py-4 border-t">
             <div className="flex flex-col gap-4">
               <Link to="/" className="text-gray-700 hover:text-green-600 transition-colors">Home</Link>
               <Link to="/about" className="text-gray-700 hover:text-green-600 transition-colors">About Us</Link>
