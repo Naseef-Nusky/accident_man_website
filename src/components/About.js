@@ -4,9 +4,9 @@ import aboutImage from "../assets/65b02d69269a9cac8221361fd1ea85ab4a9447da.png";
 export function About() {
   const features = [
     "Vehicle recovery and storage facilities",
-    "Replacement hire vehicles (cars, vans and motorcycles)",
+    "Replacement hire vehicles",
     "Trusted panel of solicitors for Personal Injury Claims",
-    "Personal Compensation assistance",
+    "Legal assistance",
     "Professional and dedicated case management",
     "Everything handled under one roof"
   ];

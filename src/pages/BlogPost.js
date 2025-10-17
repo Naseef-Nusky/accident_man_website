@@ -32,11 +32,11 @@ export default function BlogPost({ slug }) {
         </div>
         {img && <img src={img} alt={title} className="w-full h-[425px] object-cover rounded-xl mb-6" />}
         {content ? (
-          <article className="prose max-w-none">
+          <article className="prose max-w-none leading-loose">
             {documentToReactComponents(content)}
           </article>
         ) : (
-          <p className="text-gray-700">{typeof excerpt === 'string' ? excerpt : ''}</p>
+          <p className="text-gray-700 leading-loose">{typeof excerpt === 'string' ? excerpt : ''}</p>
         )}
       </div>
 

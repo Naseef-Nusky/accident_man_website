@@ -12,7 +12,7 @@ export function Services() {
     {
       icon: Car,
       title: "Replacement Vehicles",
-      description: "We understand that when your car is undrivable or in for repairs, you need alternative transport. Life moves fast, and being without a vehicle can hold you back. That’s why at Accident Man, we provide replacement vehicles — including cars, vans, and motorcycles — within around 10 hours, often sooner.",
+      description: "We understand that when your vehicle is undrivable or in for repairs, you need alternative transport. Life moves fast, and being without a vehicle can hold you back. That’s why at Accident Man, we provide replacement vehicles — including cars, vans, and motorcycles — within around 10 hours, often sooner.",
       color: "text-blue-600",
       image: consultationImg,
       highlight: "10 Hours Delivery"
@@ -28,7 +28,7 @@ export function Services() {
     {
       icon: Truck,
       title: "Storage & Recovery",
-      description: "Accidents can happen at any time and anywhere. Often the vehicles that are involved end up in non-drivable condition. We are here to help whenever you need a hand, just call us and we'll recover your car or vehicle as soon as we can.",
+      description: "Accidents can happen anytime, anywhere — and often leave vehicles in a non-drivable condition. That’s where we come in. Our experienced recovery team is available whenever you need assistance, ensuring your vehicle is collected quickly and safely.  Once recovered, your car, van, or motorcycle is stored in our secure, fully monitored premises, giving you complete peace of mind while repairs or claims are being arranged.  Whether it’s day or night, you can count on Accident Man for fast, reliable recovery and safe vehicle storage.",
       color: "text-orange-600",
       image: recoveryImg,
       highlight: "24/7 Service"

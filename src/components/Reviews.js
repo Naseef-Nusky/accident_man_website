@@ -7,46 +7,46 @@ export function Reviews() {
   
   const reviews = [
     {
-      name: "Sarah Johnson",
+      name: "Sarah M.",
       location: "London",
       rating: 5,
-      text: "Absolutely fantastic service! After my accident, Accident Man had me back on the road within 10 hours with a beautiful replacement car. The whole process was seamless and stress-free.",
-      service: "Vehicle Replacement"
-    },
-    {
-      name: "Michael Chen",
-      location: "Manchester",
-      rating: 5,
-      text: "Professional team from start to finish. My car was repaired to perfection using only branded parts. The communication throughout was excellent - I always knew what was happening.",
-      service: "Quality Repair"
-    },
-    {
-      name: "Emma Williams",
-      location: "Birmingham",
-      rating: 5,
-      text: "As a taxi driver, I was worried about losing income after my accident. Accident Man provided me with a suitable replacement vehicle immediately. They really understand professional drivers' needs.",
-      service: "PCO/Taxi Service"
-    },
-    {
-      name: "David Thompson",
-      location: "Leeds",
-      rating: 5,
-      text: "The recovery service was incredibly fast - they were at the scene within an hour. Everything was handled professionally and I didn't have to pay a penny upfront. Highly recommended!",
-      service: "Recovery Service"
-    },
-    {
-      name: "Lisa Patel",
-      location: "Bristol",
-      rating: 5,
-      text: "After 10 years in business, Accident Man really knows what they're doing. The repair quality was outstanding and the customer service was exceptional. Will definitely use again if needed.",
+      text: "Fantastic service from start to finish! After my accident, Accident Man handled everything so quickly and professionally. I had a courtesy car delivered the same day, and they kept me updated throughout the whole process. Highly recommend!",
       service: "Complete Service"
     },
     {
-      name: "James Wilson",
+      name: "James R.",
+      location: "Manchester",
+      rating: 5,
+      text: "Couldn't be happier with the service. My van was collected right after the accident, and I was provided with a replacement within hours. The team made the whole experience completely stress-free — really impressive support.",
+      service: "Van Replacement"
+    },
+    {
+      name: "Emma L.",
+      location: "Birmingham",
+      rating: 5,
+      text: "Brilliant experience! The team at Accident Man were so helpful and reassuring after my accident. They arranged everything quickly and had me back on the road with a replacement car in no time. Excellent service from a company that truly cares.",
+      service: "Car Replacement"
+    },
+    {
+      name: "Mark T.",
+      location: "Leeds",
+      rating: 5,
+      text: "Excellent service from start to finish! After my motorbike accident, Accident Man arranged recovery straight away and provided a replacement bike faster than I expected. The team made everything easy and stress-free — couldn't ask for better support.",
+      service: "Motorcycle Service"
+    },
+    {
+      name: "Lucy H.",
+      location: "Bristol",
+      rating: 5,
+      text: "Accident Man was incredible! They were so knowledgeable and guided me through every step of the process. I felt completely supported and confident that my vehicle was in expert hands.",
+      service: "Expert Support"
+    },
+    {
+      name: "Daniel K.",
       location: "Glasgow",
       rating: 5,
-      text: "From the moment I called, I felt confident I was in good hands. The team explained everything clearly and kept me updated throughout. My car looks better than before the accident!",
-      service: "Full Management"
+      text: "Outstanding service! From the moment I called Accident Man, everything was handled quickly and professionally. My PCO vehicle was replaced the same day, and the whole process was smooth and stress-free. Highly recommended!",
+      service: "PCO Service"
     }
   ];
 

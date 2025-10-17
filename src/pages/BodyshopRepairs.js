@@ -66,7 +66,7 @@ export default function BodyshopRepairs() {
             </div>
             <div className="rounded-xl border p-4 bg-gray-50">
               <h4 className="font-semibold text-gray-900 mb-2">Quality Assured</h4>
-              <p className="text-sm text-gray-700">All work inspected by qualified engineers. Genuine parts. Manufacturer-matched paint.</p>
+              <p className="text-sm text-gray-700">Every repair we carry out is carefully inspected by our qualified engineers to ensure top-quality results and complete safety. We use only genuine parts and manufacturer-matched paint, restoring your vehicle to its original standard and appearance.</p>
             </div>
           </aside>
         </div>

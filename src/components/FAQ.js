@@ -22,7 +22,7 @@ export function FAQ() {
     },
     {
       question: "I had an accident, what should I do?",
-      answer: "First, ensure everyone's safety and call emergency services if needed. Take photos of the damage and exchange details with the other driver. Then contact us immediately on 0843 289 1570 or our 24-hour line 07591 264731. We'll guide you through the entire process including vehicle recovery and replacement car provision."
+      answer: "First, ensure everyone's safety and call emergency services if needed. Take photos of the damage and exchange details with the other driver. Then contact us immediately on 0843 289 1570 or our 24-hour line 07591 264731. We'll guide you through the entire process including vehicle recovery and replacement vehicle provision."
     },
     {
       question: "Will my no-claims bonus be affected by a non-fault accident?",
