@@ -1,30 +1,35 @@
 import React from "react";
 import { Header } from "./components/Header.js";
-import { Hero } from "./components/Hero.js";
-import { About } from "./components/About.js";
-import { Services } from "./components/Services.js";
-import { ServiceShowcase } from "./components/ServiceShowcase.js";
-import { ClaimsProcess } from "./components/ClaimsProcess.js";
-import { Reviews } from "./components/Reviews.js";
-import { FAQ } from "./components/FAQ.js";
-import { ContactForm } from "./components/ContactForm.js";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home.js";
+import AboutPage from "./pages/About.js";
+import Accident from "./pages/Accident.js";
+import ReplacementVehicles from "./pages/ReplacementVehicles.js";
+import BodyshopRepairs from "./pages/BodyshopRepairs.js";
+import Contact from "./pages/Contact.js";
+import CreditHire from "./pages/CreditHire.js";
+import Blogs from "./pages/Blogs.js";
+import BlogPostRoute from "./pages/BlogPostRoute.js";
 import { Footer } from "./components/Footer.js";
 
 export default function App() {
   return (
     <div className="min-h-screen bg-white">
-      <Header />
-      <main>
-        <Hero />
-        <About />
-        <Services />
-        <ServiceShowcase />
-        <ClaimsProcess />
-        <Reviews />
-        <FAQ />
-        <ContactForm />
-      </main>
-      <Footer />
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/accident" element={<Accident />} />
+          <Route path="/replacement-vehicles" element={<ReplacementVehicles />} />
+          <Route path="/bodyshop-repairs" element={<BodyshopRepairs />} />
+          <Route path="/credit-hire" element={<CreditHire />} />
+          <Route path="/blogs" element={<Blogs />} />
+          <Route path="/blogs/:slug" element={<BlogPostRoute />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }
