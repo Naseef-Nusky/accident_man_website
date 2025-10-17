@@ -1,14 +1,15 @@
 import { Mail, MapPin, Phone } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export function Footer() {
   const quickLinks = [
-    { name: "Home", href: "#home" },
-    { name: "About Us", href: "#about" },
-    { name: "FAQ", href: "#faq" },
-    { name: "Complaints Procedure", href: "#complaints" },
-    { name: "Terms & Conditions", href: "#terms" },
-    { name: "Privacy Policy", href: "#privacy" },
-    { name: "Contact Us", href: "#contact" }
+    { name: "Home", href: "/" },
+    { name: "About Us", href: "/about" },
+    { name: "Accident", href: "/accident" },
+    { name: "Replacement Vehicles", href: "/replacement-vehicles" },
+    { name: "Bodyshop Repairs", href: "/bodyshop-repairs" },
+    { name: "Blogs", href: "/blogs" },
+    { name: "Contact Us", href: "/contact" }
   ];
 
   return (
@@ -31,9 +32,9 @@ export function Footer() {
             <ul className="space-y-2">
               {quickLinks.map((link, index) => (
                 <li key={index}>
-                  <a href={link.href} className="text-sm hover:text-green-400 transition-colors">
+                  <Link to={link.href} className="text-sm hover:text-green-400 transition-colors">
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
