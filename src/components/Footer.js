@@ -71,7 +71,7 @@ export function Footer() {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-sm text-center text-gray-400">
           <p>
-            © Accidentman Limited 2011-2024. Registered in England and Wales with company number 07622068.
+            © Accidentman Limited 2011-2025. Registered in England and Wales with company number 07622068.
           </p>
           <p className="mt-2">
             Registered Office: ACCIDENT MAN LIMITED / CPS & CO, 10a Aldermans Hill, Palmers Green, England N13 4PJ

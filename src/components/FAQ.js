@@ -17,7 +17,7 @@ export function FAQ() {
       answer: "No, you will not need to pay any excess if the accident was not your fault. We operate on a credit hire basis with no up-front costs for non-fault accidents. The at-fault party's insurance will cover all costs including your replacement vehicle and repairs."
     },
     {
-      question: "How does the vehicle repair process work with Crystal Claims Management?",
+      question: "How does the vehicle repair process work with Accident Man?",
       answer: "Our repair process is straightforward: we recover your vehicle, arrange repairs at our approved bodyshops using only branded parts, and provide you with a replacement vehicle throughout the process. Each repair is inspected by independent engineers to ensure your vehicle is returned to its pre-incident condition."
     },
     {

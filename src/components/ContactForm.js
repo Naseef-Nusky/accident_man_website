@@ -93,7 +93,7 @@ export function ContactForm() {
                     <MapPin className="w-6 h-6 text-green-600" />
                   </div>
                   <div>
-                    <p className="text-gray-900 mb-1">Address</p>
+                    <p className="text-gray-900 mb-1">Head Office</p>
                     <p className="text-gray-600">
                       7a Queens Parade Mansions<br />
                       Brownlow Road, Bounds Green<br />

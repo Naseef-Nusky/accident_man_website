@@ -11,8 +11,8 @@ export function Services() {
   const services = [
     {
       icon: Car,
-      title: "PCO / Courtesy Car",
-      description: "We understand that while your car is not drivable or your car is under repair, you will need to have an alternative transport. Life can move fast, so without a car we can become stuck… Here at Accident Man we provide a replacement car within 10 hours.",
+      title: "Replacement Vehicles",
+      description: "We understand that when your car is undrivable or in for repairs, you need alternative transport. Life moves fast, and being without a vehicle can hold you back. That’s why at Accident Man, we provide replacement vehicles — including cars, vans, and motorcycles — within around 10 hours, often sooner.",
       color: "text-blue-600",
       image: consultationImg,
       highlight: "10 Hours Delivery"

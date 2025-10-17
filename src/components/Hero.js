@@ -16,7 +16,7 @@ export function Hero() {
 
   const stats = [
     { icon: Clock, value: "10hrs", label: "Replacement Vehicle Delivery" },
-    { icon: Shield, value: "13+", label: "Years of Experience" },
+    { icon: Shield, value: "10", label: "Years of Experience" },
     { icon: Award, value: "100%", label: "Quality Guaranteed" }
   ];
 
@@ -128,13 +128,13 @@ export function Hero() {
 
               {/* Floating Cards */}
               <div className="absolute -top-6 -right-6 bg-green-600 text-white p-4 rounded-xl shadow-lg transform -rotate-12 hover:rotate-0 transition-transform duration-300">
-                <div className="text-2xl font-bold">13+</div>
+                <div className="text-2xl font-bold">10+</div>
                 <div className="text-xs">Years Experience</div>
               </div>
 
               <div className="absolute -bottom-6 -left-6 bg-blue-600 text-white p-4 rounded-xl shadow-lg transform rotate-12 hover:rotate-0 transition-transform duration-300">
                 <div className="text-2xl font-bold">10hrs</div>
-                <div className="text-xs">Delivery Time</div>
+                <div className="text-xs">Expected delivery: 10 hours or less in some cases.</div>
               </div>
             </div>
           </div>

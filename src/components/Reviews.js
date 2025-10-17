@@ -38,7 +38,7 @@ export function Reviews() {
       name: "Lisa Patel",
       location: "Bristol",
       rating: 5,
-      text: "After 13 years in business, Accident Man really knows what they're doing. The repair quality was outstanding and the customer service was exceptional. Will definitely use again if needed.",
+      text: "After 10 years in business, Accident Man really knows what they're doing. The repair quality was outstanding and the customer service was exceptional. Will definitely use again if needed.",
       service: "Complete Service"
     },
     {
@@ -81,11 +81,10 @@ export function Reviews() {
             Trusted by Thousands
           </div>
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Don't Take Our Word For It
+            Chosen by Countless Satisfied Customers
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Check out our Trustpilot reviews and see what our customers say about our 
-            professional accident management services.
+            See how our professional accident management services make a real difference.
           </p>
         </div>
 
@@ -179,11 +178,10 @@ export function Reviews() {
         <div className="text-center bg-gradient-to-r from-green-600 to-green-700 rounded-2xl p-12 text-white">
           <div className="max-w-3xl mx-auto">
             <h3 className="text-4xl font-bold mb-6 text-gray-900 drop-shadow-lg">
-              Ready to Experience Our Service?
+              Experience Our Service Today
             </h3>
             <p className="text-xl mb-12 text-gray-900 font-semibold drop-shadow-lg">
-              Join thousands of satisfied customers who trust Accident Man for their 
-              accident management needs.
+              Let Accident Man take care of your accident management while you stay worry-free.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <a 
