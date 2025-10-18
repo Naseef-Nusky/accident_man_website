@@ -132,7 +132,6 @@ export function ContactForm() {
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg">
-              <h4 className="mb-3">Company Information</h4>
               <p className="text-sm text-gray-600">
                 Registered in England and Wales<br />
                 Company Number: 07622068<br />

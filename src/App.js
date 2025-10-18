@@ -10,12 +10,17 @@ import Contact from "./pages/Contact.js";
 import CreditHire from "./pages/CreditHire.js";
 import Blogs from "./pages/Blogs.js";
 import BlogPostRoute from "./pages/BlogPostRoute.js";
+import { Terms } from "./pages/Terms.js";
+import { Complaints } from "./pages/Complaints.js";
+import { PrivacyPolicy } from "./pages/PrivacyPolicy.js";
+import { ScrollToTop } from "./components/ScrollToTop.js";
 import { Footer } from "./components/Footer.js";
 
 export default function App() {
   return (
     <div className="min-h-screen bg-white">
       <BrowserRouter>
+        <ScrollToTop />
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -27,6 +32,9 @@ export default function App() {
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/blogs/:slug" element={<BlogPostRoute />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/complaints" element={<Complaints />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         </Routes>
         <Footer />
       </BrowserRouter>

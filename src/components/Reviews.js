@@ -214,7 +214,7 @@ export function Reviews() {
                 href="#contact"
                 className="bg-green-500 text-white px-6 md:px-10 py-4 md:py-5 rounded-xl font-bold text-lg md:text-xl hover:bg-green-400 transition-all duration-300 transform hover:scale-105 shadow-lg"
               >
-                Let's Talk - Get Quote
+                Contact Us Now
               </a>
             </div>
           </div>

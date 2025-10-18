@@ -9,7 +9,10 @@ export function Footer() {
     { name: "Replacement Vehicles", href: "/replacement-vehicles" },
     { name: "Bodyshop Repairs", href: "/bodyshop-repairs" },
     { name: "Blogs", href: "/blogs" },
-    { name: "Contact Us", href: "/contact" }
+    { name: "Contact Us", href: "/contact" },
+    { name: "Terms & Conditions", href: "/terms" },
+    { name: "Complaints Procedure", href: "/complaints" },
+    { name: "Privacy Policy", href: "/privacy-policy" }
   ];
 
   return (
@@ -29,15 +32,13 @@ export function Footer() {
           {/* Quick Links */}
           <div>
             <h3 className="text-white mb-4">Quick Links</h3>
-            <ul className="space-y-2">
+            <div className="grid grid-cols-2 gap-x-4 gap-y-2">
               {quickLinks.map((link, index) => (
-                <li key={index}>
-                  <Link to={link.href} className="text-sm hover:text-green-400 transition-colors">
-                    {link.name}
-                  </Link>
-                </li>
+                <Link key={index} to={link.href} className="text-sm hover:text-green-400 transition-colors">
+                  {link.name}
+                </Link>
               ))}
-            </ul>
+            </div>
           </div>
 
           {/* Contact Info */}

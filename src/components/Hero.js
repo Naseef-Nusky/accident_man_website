@@ -10,13 +10,12 @@ export function Hero() {
     "Quality Vehicle Repairs",
     "Similar Replacement Vehicle",
     "Taxi/PCO Accident Claims",
-    "Motorcycle Accident Claim",
-    "Legal Assistance"
+    "Motorcycle Accident Claim"
   ];
 
   const stats = [
     { icon: Clock, value: "10hrs", label: "Replacement Vehicle Delivery" },
-    { icon: Shield, value: "10", label: "Years of Experience" },
+    { icon: Shield, value: "10+", label: "Years of Experience" },
     { icon: Award, value: "100%", label: "Quality Guaranteed" }
   ];
 
@@ -57,7 +56,7 @@ export function Hero() {
                 <span className="text-green-400">Accident Management</span>
               </h1>
               <p className="text-xl text-gray-300 leading-relaxed max-w-lg">
-                Providing comprehensive car accident management services across the UK. 
+                Providing comprehensive vehicle accident management services across the UK. 
                 We assist clients involved in non-fault road traffic accidents with expert 
                 support and fast recovery solutions.
               </p>
