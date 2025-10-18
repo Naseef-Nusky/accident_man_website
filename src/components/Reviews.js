@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 
 export function Reviews() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [reviewsPerSlide, setReviewsPerSlide] = useState(1);
   
   const reviews = [
     {
@@ -50,12 +51,31 @@ export function Reviews() {
     }
   ];
 
+  // Update reviews per slide based on screen size
+  useEffect(() => {
+    const updateReviewsPerSlide = () => {
+      if (window.innerWidth >= 1024) { // lg breakpoint
+        setReviewsPerSlide(4);
+      } else if (window.innerWidth >= 768) { // md breakpoint
+        setReviewsPerSlide(2);
+      } else {
+        setReviewsPerSlide(1);
+      }
+    };
+
+    updateReviewsPerSlide();
+    window.addEventListener('resize', updateReviewsPerSlide);
+    return () => window.removeEventListener('resize', updateReviewsPerSlide);
+  }, []);
+
+  const totalSlides = Math.ceil(reviews.length / reviewsPerSlide);
+
   const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % Math.ceil(reviews.length / 4));
+    setCurrentSlide((prev) => (prev + 1) % totalSlides);
   };
 
   const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + Math.ceil(reviews.length / 4)) % Math.ceil(reviews.length / 4));
+    setCurrentSlide((prev) => (prev - 1 + totalSlides) % totalSlides);
   };
 
   const goToSlide = (index) => {
@@ -65,25 +85,25 @@ export function Reviews() {
   // Auto-play functionality
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % Math.ceil(reviews.length / 4));
+      setCurrentSlide((prev) => (prev + 1) % totalSlides);
     }, 5000); // Change slide every 5 seconds
 
     return () => clearInterval(interval);
-  }, [reviews.length]);
+  }, [totalSlides]);
 
   return (
-    <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
+    <section className="py-12 md:py-20 bg-gradient-to-br from-gray-50 to-white">
       <div className="container mx-auto px-4">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-8 md:mb-16">
           <div className="inline-flex items-center gap-2 bg-green-100 text-green-600 rounded-full px-4 py-2 text-sm font-medium mb-4">
             <Star className="w-4 h-4 fill-current" />
             Trusted by Thousands
           </div>
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-4">
             Chosen by Countless Satisfied Customers
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto px-4">
             See how our professional accident management services make a real difference.
           </p>
         </div>
@@ -95,7 +115,7 @@ export function Reviews() {
           <div className="overflow-hidden rounded-2xl">
             <div 
               className="flex transition-transform duration-500 ease-in-out"
-              style={{ transform: `translateX(-${currentSlide * 25}%)` }}
+              style={{ transform: `translateX(-${currentSlide * (100 / reviewsPerSlide)}%)` }}
             >
               {reviews.map((review, index) => (
                 <div key={index} className="w-full lg:w-1/4 md:w-1/2 flex-shrink-0 px-3">
@@ -143,23 +163,23 @@ export function Reviews() {
           {/* Navigation Arrows */}
           <button
             onClick={prevSlide}
-            className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-gray-600 hover:text-green-600 rounded-full p-3 shadow-lg transition-all duration-300 hover:scale-110"
+            className="absolute left-2 md:left-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-gray-600 hover:text-green-600 rounded-full p-2 md:p-3 shadow-lg transition-all duration-300 hover:scale-110 z-10"
             aria-label="Previous review"
           >
-            <ChevronLeft className="w-6 h-6" />
+            <ChevronLeft className="w-5 h-5 md:w-6 md:h-6" />
           </button>
           
           <button
             onClick={nextSlide}
-            className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-gray-600 hover:text-green-600 rounded-full p-3 shadow-lg transition-all duration-300 hover:scale-110"
+            className="absolute right-2 md:right-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-gray-600 hover:text-green-600 rounded-full p-2 md:p-3 shadow-lg transition-all duration-300 hover:scale-110 z-10"
             aria-label="Next review"
           >
-            <ChevronRight className="w-6 h-6" />
+            <ChevronRight className="w-5 h-5 md:w-6 md:h-6" />
           </button>
 
           {/* Dots Indicator */}
           <div className="flex justify-center gap-2 mt-8">
-            {Array.from({ length: Math.ceil(reviews.length / 4) }).map((_, index) => (
+            {Array.from({ length: totalSlides }).map((_, index) => (
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
@@ -175,24 +195,24 @@ export function Reviews() {
         </div>
 
         {/* Simplified CTA Section */}
-        <div className="text-center bg-gradient-to-r from-green-600 to-green-700 rounded-2xl p-12 text-white">
+        <div className="text-center bg-gradient-to-r from-green-600 to-green-700 rounded-2xl p-8 md:p-12 text-white">
           <div className="max-w-3xl mx-auto">
-            <h3 className="text-4xl font-bold mb-6 text-gray-900 drop-shadow-lg">
+            <h3 className="text-2xl md:text-4xl font-bold mb-4 md:mb-6 text-gray-900 drop-shadow-lg">
               Experience Our Service Today
             </h3>
-            <p className="text-xl mb-12 text-gray-900 font-semibold drop-shadow-lg">
+            <p className="text-lg md:text-xl mb-8 md:mb-12 text-gray-900 font-semibold drop-shadow-lg px-4">
               Let Accident Man take care of your accident management while you stay worry-free.
             </p>
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center px-4">
               <a 
                 href="tel:08432891570"
-                className="bg-white text-green-600 px-10 py-5 rounded-xl font-bold text-xl hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg"
+                className="bg-white text-green-600 px-6 md:px-10 py-4 md:py-5 rounded-xl font-bold text-lg md:text-xl hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg"
               >
                 Start Your Claim - Call Now
               </a>
               <a 
                 href="#contact"
-                className="bg-green-500 text-white px-10 py-5 rounded-xl font-bold text-xl hover:bg-green-400 transition-all duration-300 transform hover:scale-105 shadow-lg"
+                className="bg-green-500 text-white px-6 md:px-10 py-4 md:py-5 rounded-xl font-bold text-lg md:text-xl hover:bg-green-400 transition-all duration-300 transform hover:scale-105 shadow-lg"
               >
                 Let's Talk - Get Quote
               </a>
