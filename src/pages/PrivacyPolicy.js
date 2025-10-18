@@ -17,14 +17,6 @@ export function PrivacyPolicy() {
               <CardTitle className="text-2xl text-gray-900">Privacy Policy (UK Compliant)</CardTitle>
             </CardHeader>
             <CardContent className="space-y-8">
-              
-              {/* Effective Date */}
-              <div className="bg-blue-50 p-4 rounded-lg">
-                <p className="text-gray-700 font-semibold">
-                  <strong>Effective Date:</strong> October 2025
-                </p>
-              </div>
-
               {/* Introduction */}
               <div>
                 <div className="text-gray-700 leading-relaxed space-y-3">
@@ -64,17 +56,6 @@ export function PrivacyPolicy() {
 
             </CardContent>
           </Card>
-
-          {/* Last Updated */}
-          <div className="text-center mt-8">
-            <p className="text-sm text-gray-500">
-              Last updated: {new Date().toLocaleDateString('en-GB', { 
-                year: 'numeric', 
-                month: 'long', 
-                day: 'numeric' 
-              })}
-            </p>
-          </div>
         </div>
       </div>
     </main>

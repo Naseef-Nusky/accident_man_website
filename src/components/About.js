@@ -5,7 +5,7 @@ export function About() {
   const features = [
     "Vehicle recovery and storage facilities",
     "Replacement hire vehicles",
-    "Legal assistance with legal support",
+    "Legal support",
     "Professional and dedicated case management",
     "Everything handled under one roof"
   ];

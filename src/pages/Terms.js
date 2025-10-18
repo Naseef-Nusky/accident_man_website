@@ -83,17 +83,6 @@ export function Terms() {
 
             </CardContent>
           </Card>
-
-          {/* Last Updated */}
-          <div className="text-center mt-8">
-            <p className="text-sm text-gray-500">
-              Last updated: {new Date().toLocaleDateString('en-GB', { 
-                year: 'numeric', 
-                month: 'long', 
-                day: 'numeric' 
-              })}
-            </p>
-          </div>
         </div>
       </div>
     </main>

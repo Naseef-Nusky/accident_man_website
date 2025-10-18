@@ -9,45 +9,33 @@ export function Reviews() {
   const reviews = [
     {
       name: "Sarah M.",
-      location: "London",
       rating: 5,
-      text: "Fantastic service from start to finish! After my accident, Accident Man handled everything so quickly and professionally. I had a courtesy car delivered the same day, and they kept me updated throughout the whole process. Highly recommend!",
-      service: "Complete Service"
+      text: "Fantastic service from start to finish! After my accident, Accident Man handled everything so quickly and professionally. I had a courtesy car delivered the same day, and they kept me updated throughout the whole process. Highly recommend!"
     },
     {
       name: "James R.",
-      location: "Manchester",
       rating: 5,
-      text: "Couldn't be happier with the service. My van was collected right after the accident, and I was provided with a replacement within hours. The team made the whole experience completely stress-free — really impressive support.",
-      service: "Van Replacement"
+      text: "Couldn't be happier with the service. My van was collected right after the accident, and I was provided with a replacement within hours. The team made the whole experience completely stress-free — really impressive support."
     },
     {
       name: "Emma L.",
-      location: "Birmingham",
       rating: 5,
-      text: "Brilliant experience! The team at Accident Man were so helpful and reassuring after my accident. They arranged everything quickly and had me back on the road with a replacement car in no time. Excellent service from a company that truly cares.",
-      service: "Car Replacement"
+      text: "Brilliant experience! The team at Accident Man were so helpful and reassuring after my accident. They arranged everything quickly and had me back on the road with a replacement car in no time. Excellent service from a company that truly cares."
     },
     {
       name: "Mark T.",
-      location: "Leeds",
       rating: 5,
-      text: "Excellent service from start to finish! After my motorbike accident, Accident Man arranged recovery straight away and provided a replacement bike faster than I expected. The team made everything easy and stress-free — couldn't ask for better support.",
-      service: "Motorcycle Service"
+      text: "Excellent service from start to finish! After my motorbike accident, Accident Man arranged recovery straight away and provided a replacement bike faster than I expected. The team made everything easy and stress-free — couldn't ask for better support."
     },
     {
       name: "Lucy H.",
-      location: "Bristol",
       rating: 5,
-      text: "Accident Man was incredible! They were so knowledgeable and guided me through every step of the process. I felt completely supported and confident that my vehicle was in expert hands.",
-      service: "Expert Support"
+      text: "Accident Man was incredible! They were so knowledgeable and guided me through every step of the process. I felt completely supported and confident that my vehicle was in expert hands."
     },
     {
       name: "Daniel K.",
-      location: "Glasgow",
       rating: 5,
-      text: "Outstanding service! From the moment I called Accident Man, everything was handled quickly and professionally. My PCO vehicle was replaced the same day, and the whole process was smooth and stress-free. Highly recommended!",
-      service: "PCO Service"
+      text: "Outstanding service! From the moment I called Accident Man, everything was handled quickly and professionally. My PCO vehicle was replaced the same day, and the whole process was smooth and stress-free. Highly recommended!"
     }
   ];
 
@@ -138,11 +126,6 @@ export function Reviews() {
                         "{review.text}"
                       </p>
 
-                      {/* Service Badge */}
-                      <div className="inline-block bg-green-100 text-green-600 text-xs font-medium px-3 py-1 rounded-full mb-4">
-                        {review.service}
-                      </div>
-
                       {/* Reviewer Info */}
                       <div className="flex flex-col items-center gap-3">
                         <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white font-bold text-sm">
@@ -150,7 +133,6 @@ export function Reviews() {
                         </div>
                         <div className="text-center">
                           <div className="font-semibold text-gray-900 text-sm">{review.name}</div>
-                          <div className="text-gray-500 text-xs">{review.location}</div>
                         </div>
                       </div>
                     </CardContent>
