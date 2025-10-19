@@ -12,12 +12,29 @@ export function ContactForm() {
     email: ""
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission
-    console.log("Form submitted:", formData);
-    alert("Thank you! We will contact you shortly.");
-    setFormData({ name: "", mobile: "", email: "" });
+    try {
+      const res = await fetch('/contact.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams({
+          name: formData.name,
+          mobile: formData.mobile,
+          email: formData.email,
+          message: ''
+        }).toString()
+      });
+      const data = await res.json().catch(() => ({ ok: false }));
+      if (res.ok && data.ok) {
+        alert('Thank you! We will contact you shortly.');
+        setFormData({ name: "", mobile: "", email: "" });
+      } else {
+        alert('Sorry, we could not send your request. Please try again or call us.');
+      }
+    } catch (err) {
+      alert('Network error. Please try again later.');
+    }
   };
 
   return (
@@ -37,11 +54,12 @@ export function ContactForm() {
                 <CardDescription>We're here to help 24/7</CardDescription>
               </CardHeader>
               <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form onSubmit={handleSubmit} action="/contact.php" method="POST" className="space-y-6">
                   <div className="space-y-2">
                     <Label htmlFor="name">Your name *</Label>
                     <Input
                       id="name"
+                      name="name"
                       type="text"
                       required
                       value={formData.name}
@@ -54,6 +72,7 @@ export function ContactForm() {
                     <Label htmlFor="mobile">Mobile Number *</Label>
                     <Input
                       id="mobile"
+                      name="mobile"
                       type="tel"
                       required
                       value={formData.mobile}
@@ -66,6 +85,7 @@ export function ContactForm() {
                     <Label htmlFor="email">Your e-mail *</Label>
                     <Input
                       id="email"
+                      name="email"
                       type="email"
                       required
                       value={formData.email}
