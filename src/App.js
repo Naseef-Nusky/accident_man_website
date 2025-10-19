@@ -1,31 +1,41 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
-import { Header } from "./components/Header";
-import { Hero } from "./components/Hero";
-import { About } from "./components/About";
-import { Services } from "./components/Services";
-import { ServiceShowcase } from "./components/ServiceShowcase";
-import { ClaimsProcess } from "./components/ClaimsProcess";
-import { FAQ } from "./components/FAQ";
-import { ContactForm } from "./components/ContactForm";
-import { Footer } from "./components/Footer";
+import { Header } from "./components/Header.js";
+import { Footer } from "./components/Footer.js";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home.js";
+import AboutPage from "./pages/About.js";
+import Accident from "./pages/Accident.js";
+import ReplacementVehicles from "./pages/ReplacementVehicles.js";
+import BodyshopRepairs from "./pages/BodyshopRepairs.js";
+import Contact from "./pages/Contact.js";
+import CreditHire from "./pages/CreditHire.js";
+import Blogs from "./pages/Blogs.js";
+import BlogPostRoute from "./pages/BlogPostRoute.js";
+import { Terms } from "./pages/Terms.js";
+import { Complaints } from "./pages/Complaints.js";
+import { PrivacyPolicy } from "./pages/PrivacyPolicy.js";
+import NotFound from "./pages/NotFound.js";
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <div className="min-h-screen bg-white">
-        <Header />
-        <main>
-          <Hero />
-          <About />
-          <Services />
-          <ServiceShowcase />
-          <ClaimsProcess />
-          <FAQ />
-          <ContactForm />
-        </main>
-        <Footer />
-      </div>
-    </BrowserRouter>
+    <div className="min-h-screen bg-white">
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/accident" element={<Accident />} />
+        <Route path="/replacement-vehicles" element={<ReplacementVehicles />} />
+        <Route path="/credit-hire" element={<CreditHire />} />
+        <Route path="/bodyshop-repairs" element={<BodyshopRepairs />} />
+        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/blogs/:slug" element={<BlogPostRoute />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/terms" element={<Terms />} />
+        <Route path="/complaints" element={<Complaints />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+      <Footer />
+    </div>
   );
 }
