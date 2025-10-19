@@ -1,11 +1,12 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card.js";
 import { Car, Wrench, Truck, Shield, Clock, Award } from "lucide-react";
-import consultationImg from "../assets/7d55e9594f915d3f28800594a5cd80b5d9bca977.png";
-import repairDetailImg from "../assets/98530efb3edeb3dc7826fb212fc5979d0d50361c.png";
-import recoveryImg from "../assets/fc97fd5e55f00f0e097ae327bbf4ef8a8fdbbc67.png";
-import aboutImg from "../assets/65b02d69269a9cac8221361fd1ea85ab4a9447da.png";
-import heroImg from "../assets/2b41bc2a854e8a736f758c0966e88c3104f1f92f.png";
-import inspectionImg from "../assets/2c09a9ec77da50da405c989b8786276029b44b32.png";
+// Use optimized WebP assets for service images
+import consultationImg from "../assets/yymo7zm41fnsom4c8g2z.webp";
+import repairDetailImg from "../assets/r19hzf1scfikxjnkusoa.webp";
+import recoveryImg from "../assets/qgpof0fnkhlqc5soznxf.webp";
+import aboutImg from "../assets/n2qdch1curvi5jho1i6k.webp";
+import heroImg from "../assets/qfzcqwjurk0uxysd8gyo.webp";
+import inspectionImg from "../assets/ma9dmfkeku19x9scu5rz.webp";
 
 export function Services() {
   const services = [
@@ -80,6 +81,8 @@ export function Services() {
                   <img 
                     src={service.image} 
                     alt={service.title}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
