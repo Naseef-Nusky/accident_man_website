@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 
 export function Reviews() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [paused, setPaused] = useState(false);
   const [reviewsPerSlide, setReviewsPerSlide] = useState(1);
   
   const reviews = [
@@ -72,12 +73,12 @@ export function Reviews() {
 
   // Auto-play functionality
   useEffect(() => {
+    if (paused) return;
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % totalSlides);
-    }, 5000); // Change slide every 5 seconds
-
+    }, 5000);
     return () => clearInterval(interval);
-  }, [totalSlides]);
+  }, [totalSlides, paused]);
 
   return (
     <section className="py-12 md:py-20 bg-gradient-to-br from-gray-50 to-white">
@@ -98,7 +99,15 @@ export function Reviews() {
 
 
         {/* Reviews Slider */}
-        <div className="relative mb-12">
+        <div className="relative mb-12" role="region" aria-label="Customer testimonials" aria-live="polite">
+          <button
+            className="absolute top-4 right-4 bg-white/90 px-3 py-1 rounded shadow z-10 text-sm"
+            aria-pressed={paused}
+            onClick={() => setPaused(p => !p)}
+            aria-label={paused ? "Play testimonials" : "Pause testimonials"}
+          >
+            {paused ? "Play" : "Pause"}
+          </button>
           {/* Slider Container */}
           <div className="overflow-hidden rounded-2xl">
             <div 
@@ -179,10 +188,10 @@ export function Reviews() {
         {/* Simplified CTA Section */}
         <div className="text-center bg-gradient-to-r from-green-600 to-green-700 rounded-2xl p-8 md:p-12 text-white">
           <div className="max-w-3xl mx-auto">
-            <h3 className="text-2xl md:text-4xl font-bold mb-4 md:mb-6 text-gray-900 drop-shadow-lg">
+            <h3 className="text-2xl md:text-4xl font-bold mb-4 md:mb-6 text-white drop-shadow-lg">
               Experience Our Service Today
             </h3>
-            <p className="text-lg md:text-xl mb-8 md:mb-12 text-gray-900 font-semibold drop-shadow-lg px-4">
+            <p className="text-lg md:text-xl mb-8 md:mb-12 text-white/90 font-semibold drop-shadow-lg px-4">
               Let Accident Man take care of your accident management while you stay worry-free.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center px-4">

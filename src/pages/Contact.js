@@ -11,7 +11,8 @@ export default function Contact() {
         canonical="/contact"
         keywords="contact accident man, claims helpline, accident management contact"
       />
-      <main>
+      <main id="main-content">
+        <h1 className="sr-only">Contact Accident Man</h1>
         <ContactForm />
       </main>
     </>

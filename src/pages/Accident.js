@@ -34,7 +34,7 @@ export default function Accident() {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="mb-8">
-            <h1 className="text-3xl font-bold text-gray-900 mb-3">What to do if you've had a road accident?</h1>
+            <h2 className="text-3xl font-bold text-gray-900 mb-3">What to do if you've had a road accident?</h2>
             <p className="text-gray-600">Follow these steps to stay safe, collect the right information, and protect your claim.</p>
           </div>
 

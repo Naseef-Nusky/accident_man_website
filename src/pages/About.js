@@ -11,7 +11,8 @@ export default function About() {
         canonical="/about"
         keywords="about accident man, accident management company, vehicle recovery UK"
       />
-      <main>
+      <main id="main-content">
+        <h1 className="sr-only">About Accident Man</h1>
         <AboutSection />
       </main>
     </>
