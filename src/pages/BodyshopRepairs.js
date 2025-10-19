@@ -1,9 +1,17 @@
 import React from "react";
+import { SEO } from "../components/SEO.js";
 import promoImage from "../assets/Auto Repair Business Promo.jpg";
 
 export default function BodyshopRepairs() {
   return (
-    <main>
+    <>
+      <SEO
+        title="Bodyshop Repairs | Professional vehicle repair"
+        description="Professional bodyshop repairs using genuine parts and expert technicians. Quality assured repairs across the UK."
+        canonical="/bodyshop-repairs"
+        keywords="bodyshop repairs, vehicle repair UK, accident repair, genuine parts"
+      />
+      <main>
       {/* Hero Banner */}
       <section className="relative h-64 md:h-80 lg:h-96 overflow-hidden">
         <img
@@ -73,7 +81,8 @@ export default function BodyshopRepairs() {
       </section>
 
       {/* ClaimsProcess removed on this page to hide the "Start Your Claim Today" CTA */}
-    </main>
+      </main>
+    </>
   );
 }
 

@@ -28,6 +28,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "sitemap": "node scripts/generate-sitemap.cjs",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

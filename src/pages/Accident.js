@@ -1,4 +1,5 @@
 import React from "react";
+import { SEO } from "../components/SEO.js";
 // eslint-disable-next-line
 import { ClaimsProcess } from "../components/ClaimsProcess.js";
 // eslint-disable-next-line
@@ -7,7 +8,14 @@ import roadAccidentImage from "../assets/Road Accident Scene.jpg";
 
 export default function Accident() {
   return (
-    <main>
+    <>
+      <SEO
+        title="What to do after a road accident | Accident Man"
+        description="Step-by-step guidance on what to do after a road accident and how Accident Man can help with recovery and replacement vehicles."
+        canonical="/accident"
+        keywords="road accident steps, accident help UK, vehicle recovery guidance"
+      />
+      <main>
       {/* Hero Banner */}
       <section className="relative h-64 md:h-80 lg:h-96 overflow-hidden">
         <img
@@ -58,7 +66,8 @@ export default function Accident() {
           </div>
         </div>
       </section>
-    </main>
+      </main>
+    </>
   );
 }
 

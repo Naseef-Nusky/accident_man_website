@@ -1,8 +1,16 @@
 import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/card.js";
+import { SEO } from "../components/SEO.js";
 
 export function PrivacyPolicy() {
   return (
+    <>
+    <SEO
+      title="Privacy Policy (UK) | Accident Man"
+      description="UK-compliant privacy policy explaining how Accident Man collects, uses, and protects your data."
+      canonical="/privacy-policy"
+      keywords="privacy policy, uk privacy policy, data protection"
+    />
     <main className="pt-16 bg-white">
       <div className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto">
@@ -59,5 +67,6 @@ export function PrivacyPolicy() {
         </div>
       </div>
     </main>
+    </>
   );
 }

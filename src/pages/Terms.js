@@ -1,8 +1,16 @@
 import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/card.js";
+import { SEO } from "../components/SEO.js";
 
 export function Terms() {
   return (
+    <>
+    <SEO
+      title="Terms and Conditions | Accident Man"
+      description="Read the terms and conditions governing the use of Accident Man services and website."
+      canonical="/terms"
+      keywords="terms and conditions, accident man terms"
+    />
     <main className="pt-16 bg-white">
       <div className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto">
@@ -86,5 +94,6 @@ export function Terms() {
         </div>
       </div>
     </main>
+    </>
   );
 }

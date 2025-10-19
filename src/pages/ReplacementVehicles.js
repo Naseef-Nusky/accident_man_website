@@ -1,4 +1,5 @@
 import React from "react";
+import { SEO } from "../components/SEO.js";
 import ford from "../assets/ford.png";
 import v145 from "../assets/145-v.png";
 import n155 from "../assets/155.png";
@@ -10,7 +11,14 @@ import volkswagen from "../assets/volkswagen_logo.png";
 
 export default function ReplacementVehicles() {
   return (
-    <main>
+    <>
+      <SEO
+        title="Replacement Vehicles | Courtesy cars, vans & motorcycles"
+        description="Get a like-for-like replacement vehicle fast. Courtesy cars, vans, and motorcycles available across the UK."
+        canonical="/replacement-vehicles"
+        keywords="replacement vehicles, courtesy car UK, van hire accident, motorcycle replacement"
+      />
+      <main>
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 max-w-5xl">
           <h1 className="text-3xl font-bold text-gray-900 mb-4">Replacement Vehicles</h1>
@@ -70,7 +78,8 @@ export default function ReplacementVehicles() {
           </div>
         </div>
       </section>
-    </main>
+      </main>
+    </>
   );
 }
 

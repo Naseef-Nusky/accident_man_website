@@ -1,8 +1,16 @@
 import React from "react";
+import { SEO } from "../components/SEO.js";
 import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/card.js";
 
 export function Complaints() {
   return (
+    <>
+    <SEO
+      title="Complaints Procedure | Accident Man"
+      description="Accident Man's complaints procedure: how to complain, information we need, and our response process."
+      canonical="/complaints"
+      keywords="complaints procedure, accident man complaints"
+    />
     <main className="pt-16 bg-white">
       <div className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto">
@@ -76,5 +84,6 @@ export function Complaints() {
         </div>
       </div>
     </main>
+    </>
   );
 }

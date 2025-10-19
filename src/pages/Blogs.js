@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { SEO } from "../components/SEO.js";
 import { fetchBlogPosts } from '../lib/contentfulClient';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import blogBgImage from '../assets/Auto Repair Blog - Workshop Restoration.jpg';
@@ -21,6 +22,13 @@ export default function Blogs() {
   if (loading) return <div className="container mx-auto px-4 py-16">Loading...</div>;
 
   return (
+    <>
+      <SEO
+        title="Blog | Accident management tips and updates"
+        description="Read the latest articles on accident management, vehicle recovery, replacement vehicles, and repair best practices."
+        canonical="/blogs"
+        keywords="accident blog, accident management tips, vehicle recovery articles"
+      />
     <main>
       {/* Blog Banner */}
       <section className="relative text-white py-20 md:py-32 overflow-hidden">
@@ -69,6 +77,7 @@ export default function Blogs() {
         </div>
       </section>
     </main>
+    </>
   );
 }
 

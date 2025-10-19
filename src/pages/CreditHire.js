@@ -1,8 +1,16 @@
 import React from "react";
+import { SEO } from "../components/SEO.js";
 
 export default function CreditHire() {
   return (
-    <main>
+    <>
+      <SEO
+        title="Credit Hire | Stay mobile after a non-fault accident"
+        description="Credit Hire service so you remain mobile without upfront costs while your vehicle is repaired. Costs recovered from the at-fault insurer."
+        canonical="/credit-hire"
+        keywords="credit hire, non-fault accident hire, replacement vehicle credit"
+      />
+      <main>
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
           <h1 className="text-3xl font-bold text-gray-900 mb-4">Credit Hire</h1>
@@ -24,7 +32,8 @@ export default function CreditHire() {
           </div>
         </div>
       </section>
-    </main>
+      </main>
+    </>
   );
 }
 

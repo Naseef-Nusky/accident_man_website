@@ -14,6 +14,7 @@ import BlogPostRoute from "./pages/BlogPostRoute.js";
 import { Terms } from "./pages/Terms.js";
 import { Complaints } from "./pages/Complaints.js";
 import { PrivacyPolicy } from "./pages/PrivacyPolicy.js";
+import NotFound from "./pages/NotFound.js";
 import { ScrollToTop } from "./components/ScrollToTop.js";
 import { PerformanceTracking } from "./components/PerformanceTracking.js";
 import { Footer } from "./components/Footer.js";
@@ -39,6 +40,7 @@ export default function App() {
           <Route path="/terms" element={<Terms />} />
           <Route path="/complaints" element={<Complaints />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </BrowserRouter>
