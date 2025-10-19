@@ -1,7 +1,6 @@
 import React from "react";
 import { Header } from "./components/Header.js";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { HelmetProvider } from "react-helmet-async";
 import Home from "./pages/Home.js";
 import AboutPage from "./pages/About.js";
 import Accident from "./pages/Accident.js";
@@ -21,7 +20,6 @@ import { Footer } from "./components/Footer.js";
 
 export default function App() {
   return (
-    <HelmetProvider>
       <div className="min-h-screen bg-white">
         <PerformanceTracking />
         <BrowserRouter>
@@ -45,6 +43,5 @@ export default function App() {
         <Footer />
       </BrowserRouter>
     </div>
-    </HelmetProvider>
   );
 }
