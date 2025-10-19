@@ -13,7 +13,7 @@ export default function Home() {
     "@type": "Organization",
     "name": "Accident Man Limited",
     "url": "https://accidentman.co.uk",
-    "logo": "https://accidentman.co.uk/logo.png",
+    "logo": "https://accidentman.co.uk/logo.webp",
     "description": "Professional accident management services including vehicle recovery, replacement vehicles, and legal assistance across the UK.",
     "address": {
       "@type": "PostalAddress",

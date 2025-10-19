@@ -10,7 +10,7 @@ export function SEO({ title, description, keywords, canonical, ogImage, ogType =
   const fullDescription = description || defaultDescription;
   const fullKeywords = keywords || defaultKeywords;
   const fullCanonical = canonical ? `${siteUrl}${canonical}` : siteUrl;
-  const fullOgImage = ogImage ? `${siteUrl}${ogImage}` : `${siteUrl}/logo.png`;
+  const fullOgImage = ogImage ? `${siteUrl}${ogImage}` : `${siteUrl}/logo.webp`;
 
   useEffect(() => {
     document.title = fullTitle;
