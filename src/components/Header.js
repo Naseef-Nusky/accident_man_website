@@ -9,13 +9,12 @@ export function Header() {
 
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
-      <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 bg-white text-black p-2 rounded">Skip to content</a>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-2">
           {/* Logo */}
           <div className="flex items-center gap-3">
             <Link to="/">
-              <img src="/logo.webp" width="96" height="88" alt="Accident Man logo" className="h-22 w-24" />
+              <img src="/logo.png" alt="Accident Man Logo" className="h-22 w-24" />
             </Link>
           </div>
 
@@ -69,9 +68,6 @@ export function Header() {
           {/* Mobile Menu Button */}
           <button
             className="xl:hidden p-2"
-            aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
-            aria-expanded={mobileMenuOpen}
-            aria-controls="primary-navigation"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -80,7 +76,7 @@ export function Header() {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <nav id="primary-navigation" className="xl:hidden py-4 border-t">
+          <nav className="xl:hidden py-4 border-t">
             <div className="flex flex-col gap-4">
               <Link to="/" className="text-gray-700 hover:text-green-600 transition-colors">Home</Link>
               <Link to="/about" className="text-gray-700 hover:text-green-600 transition-colors">About Us</Link>

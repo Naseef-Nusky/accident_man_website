@@ -1,24 +1,14 @@
 import React from "react";
-import { SEO } from "../components/SEO.js";
 import promoImage from "../assets/Auto Repair Business Promo.jpg";
 
 export default function BodyshopRepairs() {
   return (
-    <>
-      <SEO
-        title="Bodyshop Repairs | Professional vehicle repair"
-        description="Professional bodyshop repairs using genuine parts and expert technicians. Quality assured repairs across the UK."
-        canonical="/bodyshop-repairs"
-        keywords="bodyshop repairs, vehicle repair UK, accident repair, genuine parts"
-      />
-      <main>
+    <main>
       {/* Hero Banner */}
       <section className="relative h-64 md:h-80 lg:h-96 overflow-hidden">
         <img
-          src={promoImage.replace('.jpg','.webp')}
+          src={promoImage}
           alt="Auto repair business promo"
-          loading="lazy"
-          decoding="async"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/50" />
@@ -72,7 +62,7 @@ export default function BodyshopRepairs() {
 
           <aside className="lg:col-span-1 space-y-4">
             <div className="rounded-xl border overflow-hidden">
-              <img src={promoImage.replace('.jpg','.webp')} alt="Workshop" loading="lazy" decoding="async" className="w-full h-48 object-cover" />
+              <img src={promoImage} alt="Workshop" className="w-full h-48 object-cover" />
             </div>
             <div className="rounded-xl border p-4 bg-gray-50">
               <h4 className="font-semibold text-gray-900 mb-2">Quality Assured</h4>
@@ -83,8 +73,7 @@ export default function BodyshopRepairs() {
       </section>
 
       {/* ClaimsProcess removed on this page to hide the "Start Your Claim Today" CTA */}
-      </main>
-    </>
+    </main>
   );
 }
 
