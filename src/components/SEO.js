@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 
 export function SEO({ title, description, keywords, canonical, ogImage, ogType = 'website', structuredData }) {
   const defaultTitle = "Accident Man - Professional Accident Management Services";
