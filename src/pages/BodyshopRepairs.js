@@ -15,8 +15,10 @@ export default function BodyshopRepairs() {
       {/* Hero Banner */}
       <section className="relative h-64 md:h-80 lg:h-96 overflow-hidden">
         <img
-          src={promoImage}
+          src={promoImage.replace('.jpg','.webp')}
           alt="Auto repair business promo"
+          loading="lazy"
+          decoding="async"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/50" />
@@ -70,7 +72,7 @@ export default function BodyshopRepairs() {
 
           <aside className="lg:col-span-1 space-y-4">
             <div className="rounded-xl border overflow-hidden">
-              <img src={promoImage} alt="Workshop" className="w-full h-48 object-cover" />
+              <img src={promoImage.replace('.jpg','.webp')} alt="Workshop" loading="lazy" decoding="async" className="w-full h-48 object-cover" />
             </div>
             <div className="rounded-xl border p-4 bg-gray-50">
               <h4 className="font-semibold text-gray-900 mb-2">Quality Assured</h4>

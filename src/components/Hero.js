@@ -24,8 +24,12 @@ export function Hero() {
       {/* Background Image with Enhanced Overlay */}
       <div className="absolute inset-0">
         <img 
-          src={heroImage}
+          src={heroImage.replace('.png','.webp')}
+          srcSet={`${heroImage.replace('.png','.webp')} 1600w, ${heroImage.replace('.png','.webp')} 1200w`}
+          sizes="(max-width: 768px) 100vw, 100vw"
           alt="Accident recovery and towing services"
+          fetchpriority="high"
+          decoding="async"
           className="w-full h-full object-cover brightness-75"
         />
         {/* Darker overlays for improved text contrast */}
@@ -112,8 +116,10 @@ export function Hero() {
               {/* Main Image Card */}
               <div className="relative rounded-2xl overflow-hidden shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500">
                 <img 
-                  src={heroImage}
+                  src={heroImage.replace('.png','.webp')}
                   alt="Professional accident management services"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-96 object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
