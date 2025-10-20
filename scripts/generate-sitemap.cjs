@@ -39,3 +39,4 @@ fs.writeFileSync(outPath, xml.trim() + '\n', 'utf8');
 console.log('Sitemap generated to', outPath);
 
 
+
