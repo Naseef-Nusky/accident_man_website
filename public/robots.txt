@@ -1,20 +1,52 @@
+# Robots.txt for Accident Man - Professional Accident Management Services
+# https://accidentman.co.uk
+
+# Allow all search engines to crawl the site
 User-agent: *
 Allow: /
 
-# Sitemap
-Sitemap: https://accidentman.co.uk/sitemap.xml
-
-# Crawl-delay for respectful crawling
+# Specific directives for Google
+User-agent: Googlebot
+Allow: /
 Crawl-delay: 1
 
-# Disallow admin areas (if any)
+# Specific directives for Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Block problematic bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# Disallow admin and private areas
 Disallow: /admin/
 Disallow: /private/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/
 
-# Allow important pages
+# Allow important pages explicitly
 Allow: /about
-Allow: /services
+Allow: /accident
+Allow: /replacement-vehicles
+Allow: /credit-hire
+Allow: /bodyshop-repairs
+Allow: /blogs
 Allow: /contact
 Allow: /terms
 Allow: /privacy-policy
 Allow: /complaints
+
+# Sitemap location
+Sitemap: https://accidentman.co.uk/sitemap.xml
+
+# Additional sitemaps (if you have them)
+# Sitemap: https://accidentman.co.uk/sitemap-images.xml
+# Sitemap: https://accidentman.co.uk/sitemap-news.xml
